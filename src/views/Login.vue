@@ -89,8 +89,8 @@ export default {
   justify-content: center;
 
   .loginDiv {
-    width: 25%;
-    height: 50%;
+    width: 360px;
+    height: 350px;
     background-color: white;
     border-radius: 5px;
 

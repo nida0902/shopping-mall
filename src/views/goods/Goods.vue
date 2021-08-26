@@ -1,10 +1,10 @@
 <template>
-  <h2>工作台</h2>
+  <h2>商品管理</h2>
 </template>
 
 <script>
 export default {
-  name: 'Workbench'
+  name: 'Goods'
 }
 </script>
 

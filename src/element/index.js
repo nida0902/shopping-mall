@@ -13,7 +13,14 @@ import {
   Divider,
   Dropdown,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
+  Menu,
+  MenuItem,
+  Row,
+  Col,
+  Select,
+  Option,
+  DatePicker
 } from 'element-ui'
 
 export default {
@@ -33,5 +40,12 @@ export default {
     Vue.use(Dropdown)
     Vue.use(DropdownMenu)
     Vue.use(DropdownItem)
+    Vue.use(Menu)
+    Vue.use(MenuItem)
+    Vue.use(Row)
+    Vue.use(Col)
+    Vue.use(Select)
+    Vue.use(Option)
+    Vue.use(DatePicker)
   }
 }

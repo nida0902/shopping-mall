@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { getStore, removeToken, setToken } from '@/utils/tool'
+import { getStore, removeToken } from '@/utils/tool'
 import Moment from 'moment'
 import { logout } from '@/api'
 import router from '@/router'
