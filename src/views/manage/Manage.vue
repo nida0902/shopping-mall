@@ -8,6 +8,7 @@
       <div class="upload">
         <el-upload
           class="upload-demo"
+          action=""
           :on-preview="handlePreview"
           :on-remove="handleRemove"
           :file-list="fileList"
