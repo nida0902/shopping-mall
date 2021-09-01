@@ -80,7 +80,7 @@ export default {
 .login {
   height: 100%;
   width: 100%;
-  background: url("~@/assets/background.jpg") no-repeat;
+  background: url("~@/assets/images/background.jpg") no-repeat;
   background-size: cover;
   opacity: 0.8;
 

@@ -5,22 +5,28 @@
       @resetBtnClick="resetBtnClick"
       @searchBtnClick="searchBtnClick"
     />
+    <page-content
+      :content-config="contentConfig"
+    />
   </div>
 </template>
 
 <script>
 import PageSearch from '@/components/page-search'
-
+import PageContent from '@/components/page-content'
 import { searchConfig } from './config/search.config'
+import { contentConfig } from './config/content.config'
 
 export default {
   name: 'Users',
   components: {
-    PageSearch
+    PageSearch,
+    PageContent
   },
   data() {
     return {
-      searchConfig
+      searchConfig,
+      contentConfig
     }
   },
   methods: {
@@ -34,6 +40,10 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+.users {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 </style>

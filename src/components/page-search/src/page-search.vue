@@ -1,10 +1,13 @@
 <template>
   <div class="page-search">
     <my-form v-model="formData" v-bind="searchConfig">
+      <template #header>
+        <div class="title">检索条件</div>
+      </template>
       <template #footer>
         <div class="handleBtn">
-          <el-button icon="el-icon-refresh" size="small" @click="handleResetClick">重置</el-button>
           <el-button icon="el-icon-search" size="small" @click="handleSearchClick">搜索</el-button>
+          <el-button icon="el-icon-refresh" size="small" @click="handleResetClick">重置</el-button>
         </div>
       </template>
     </my-form>
@@ -50,6 +53,10 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+.page-search {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
 </style>

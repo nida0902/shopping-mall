@@ -20,7 +20,9 @@ import {
   Col,
   Select,
   Option,
-  DatePicker
+  DatePicker,
+  Table,
+  TableColumn, Upload
 } from 'element-ui'
 
 export default {
@@ -47,5 +49,8 @@ export default {
     Vue.use(Select)
     Vue.use(Option)
     Vue.use(DatePicker)
+    Vue.use(Table)
+    Vue.use(TableColumn)
+    Vue.use(Upload)
   }
 }

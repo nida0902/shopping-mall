@@ -3,7 +3,7 @@
     <div class="header">
       <slot name="header" />
     </div>
-    <el-form :label-width="labelWidth" size="small">
+    <el-form :label-width="labelWidth" :size="size">
       <el-row>
         <template v-for="item in formItems">
           <el-col :key="item.label" v-bind="colLayout">
@@ -11,13 +11,11 @@
               v-if="!formItems.isHidden"
               :label="item.label"
               :rules="item.rules"
-              :style="itemStyle"
             >
               <template v-if="item.type === 'input' || item.type === 'password'">
                 <el-input
                   v-model="formData[item.field]"
                   :placeholder="item.placeholder"
-                  v-bind="item.otherOptions"
                   :show-password="item.type === 'password'"
                   @change="handleValueChange()"
                 />
@@ -82,13 +80,13 @@ export default {
         xs: 24
       })
     },
-    itemStyle: {
-      type: Object,
-      default: () => ({ padding: '10px 40px' })
-    },
     formData: {
       type: Object,
       required: true
+    },
+    size: {
+      type: String,
+      default: 'small'
     }
   },
   methods: {
@@ -101,6 +99,10 @@ export default {
 
 <style scoped lang="less">
 .my-form {
-  padding-top: 22px;
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 </style>

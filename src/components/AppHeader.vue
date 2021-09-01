@@ -1,6 +1,6 @@
 <template>
   <div class="appHeader">
-    <div class="title">后台管理系统</div>
+    <div class="systemName">后台管理系统</div>
     <div class="user">
       <div class="nowTime">{{ nowTime }}</div>
       <el-divider direction="vertical" />
@@ -63,14 +63,12 @@ export default {
 .appHeader {
   height: 100%;
   width: 100%;
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  .title {
+  .systemName {
     font-size: 20px;
     color: #777777;
   }
